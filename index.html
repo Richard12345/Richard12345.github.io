@@ -1,259 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QA Engineering</title>
+    <style>
+    body {
+      background-color: #E6E6FA;
+    }
 
-<HTML>
+    details {
+        border: 1px solid #d4d4d4;
+        padding: .75em .75em 0;
+        margin-top: 10px;
+        box-shadow:0 0 20px #d4d4d4;
+    }
 
-<HEAD>
+    summary {
+        font-weight: bold;
+        margin: -.75em -.75em 0;
+        padding: .75em;
+        background-color: #5f75a4;
+        color: #fff;
+    }
 
-  <style>
+    details[open] {
+        padding: .75em;
+        border-bottom: 1px solid #d4d4d4;
+    }
 
-
-details {
-    border: 1px solid #d4d4d4;    
-    padding: .75em .75em 0;
-	margin-top: 10px;
-	box-shadow:0 0 20px #d4d4d4;
-}
-
-summary {	
-    font-weight: bold;
-    margin: -.75em -.75em 0;
-    padding: .75em;
-    background-color: #5f75a4;
-    color: #fff;
-}
-
-details[open] {
-    padding: .75em;
-	border-bottom: 1px solid #d4d4d4;
-}
-
-details[open] summary {
-    border-bottom: 1px solid #d4d4d4;
-    margin-bottom: 10px;
-}    
-
-#bannerlist {
-  white-space: nowrap;
-}
-
-#bannerlist {
-  list-style: none;
-  display: inline;
-}
-
-#imglist{
-   text-align: center;
-  width: 100px;
-}
-
-#imglist01{
-   text-align: center;
-  width: 350px;
-}
-
-#imglistlogo{
-   max-width:80px;
-    max-height:80px;
-    width:auto;
-    height:auto;
-    transform:rotate(-45deg);
-     padding:20px; 
-
-}
-
-#imglistjokes{
-  text-align: center;
-  width: 55%;
-
-}
+    details[open] summary {
+        border-bottom: 1px solid #d4d4d4;
+        margin-bottom: 10px;
+    }
 
 
+    .bannerlist {
+    white-space: nowrap;
+      list-style: none;
+      display: inline;
+    }
 
-</style>
+    .imglist{
+       text-align: center;
+      width: 100px;
+    }
 
-	<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>
+    .imglist01{
+       text-align: center;
+      width: 350px;
+    }
 
+    .imglistlogo{
+       max-width:80px;
+        max-height:80px;
+        width:auto;
+        height:auto;
+        transform:rotate(-45deg);
+         padding:20px;
+
+    }
+
+    .imglistjokes{
+      text-align: center;
+      width: 55%;
+    }
+    </style>
+
+    <meta content='text/html; charset=ISO-8859-1' http-equiv='Content-Type'>
 	<script language="Javascript" src="http://ht-brands.aol.com/promos.js?i=14827,15181,15142"></script>
-
 	<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ar.atwola.com/file/adsWrapper.js"></SCRIPT>
-
-
-
+    <script id=clientEventHandlersVBS language=vbscript></script>
 	<script language=JavaScript>
+    function isSignIn () {
+
+      var CookieString = document.cookie;
+
+      var CookieSet = CookieString.split (';');
+
+      var SetSize = CookieSet.length;
+
+      var CookiePieces
+
+      var ReturnValue = "";
+
+      var x = 0;
+
+      var found = 0;
 
 
 
-function isSignIn () {
-
-  var CookieString = document.cookie;
-
-  var CookieSet = CookieString.split (';');
-
-  var SetSize = CookieSet.length;
-
-  var CookiePieces
-
-  var ReturnValue = "";
-
-  var x = 0;
-
-  var found = 0;
+      for (x = 0; ((x < SetSize) && (ReturnValue == "")); x++) {
 
 
 
-  for (x = 0; ((x < SetSize) && (ReturnValue == "")); x++) {
+        CookiePieces = CookieSet[x].split ('=');
 
 
 
-    CookiePieces = CookieSet[x].split ('=');
+        if (CookiePieces[0].substring (0,1) == ' ') {
+
+          CookiePieces[0] = CookiePieces[0].substring (1, CookiePieces[0].length);
+
+        }
 
 
 
-    if (CookiePieces[0].substring (0,1) == ' ') {
+        if (CookiePieces[0] == "WA_TMCJ_ESK") {
 
-      CookiePieces[0] = CookiePieces[0].substring (1, CookiePieces[0].length);
+          found = 1;
+
+          break;
+
+        }
+
+
+
+      }
+
+
+
+      if (found == 1)  {
+
+         document.write("<a href=\"http://my.screenname.aol.com/_cqr/logout/mcLogout.tmpl?siteId=mtCSUS\"><img src=\"http://my.screenname.aol.com/images/signout88.gif\" BORDER=0></a>");
+
+      } else {
+
+         _15142();
+
+      }
 
     }
-
-
-
-    if (CookiePieces[0] == "WA_TMCJ_ESK") {
-
-      found = 1;
-
-      break;
-
-    }
-
-
-
-  }
-
-
-
-  if (found == 1)  {
-
-     document.write("<a href=\"http://my.screenname.aol.com/_cqr/logout/mcLogout.tmpl?siteId=mtCSUS\"><img src=\"http://my.screenname.aol.com/images/signout88.gif\" BORDER=0></a>");
-
-  } else {
-
-     _15142();
-
-  }
-
-}
 
     </script>
-
-
-
-<title>Quality Engineering</title>
-
-<meta name="Microsoft Theme" content="axis 011">
-</HEAD>
-
-<BODY topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" background="_themes/axis/axibkgnd.gif" bgcolor="#FFFFFF" text="#000000" link="#339933" vlink="#996600" alink="#CC9900"><!--mstheme--><font face="trebuchet ms, Arial, Helvetica"><!--mstheme--></font><table width="100%" border="0" cellspacing="0" cellpadding="0">
-
-	<tr><td width="100%" valign="top" align="left"><!--mstheme--><font face="trebuchet ms, Arial, Helvetica"> 
-
-		<!-- header begin -->
-
-			
-
-		<!-- header end -->
-
-  	  <!--mstheme--></font></td></tr>
-
-  	<tr><td width="100%" align="left" valign="top"><!--mstheme--><font face="trebuchet ms, Arial, Helvetica">
-
-		<!-- main BODY begin -->
-
-		<html>
-
-
-
-<head>
-
-<meta http-equiv="Content-Language" content="en-us">
-
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-
-<title>Quality Engineering</title>
-
-<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
-
-<meta name="ProgId" content="FrontPage.Editor.Document">
-
-<script id=clientEventHandlersVBS language=vbscript>
-
-
-
-</script>
-
 </head>
-
-
-
-<body background="_themes/axis/axibkgnd.gif" bgcolor="#FFFFFF" text="#000000" link="#339933" vlink="#996600" alink="#CC9900"><!--mstheme--><font face="trebuchet ms, Arial, Helvetica">
-
-</head>
-
-
-
-<body background="_themes/axis/axibkgnd.gif" bgcolor="#FFFFFF" text="#000000" link="#339933" vlink="#996600" alink="#CC9900"><!--mstheme--><font face="trebuchet ms, Arial, Helvetica">
-
-
-
-<p align="center"><blink><b><font face="Times New Roman" size="4">
-
-<ul id="bannerlist">
-    <li id="bannerlist"><img id="imglist" src="LogoBanner.jpg"></li>
-    <li id="bannerlist"><img id="imglist" title="Data mining is a Process." src="crispdm.jpg"></li>
-    <li id="bannerlist"><img id="imglist" title="SQL,Data Integration and Business Intelligence Dashboard to drive changes." src="ssrs.jpg"></li>
-    <li id="bannerlist"><img id="imglist" title="Six Sigma--Drive Changes using Data, Lean --Drive Workflow/ Process Improvement via Standardization" src="sixsigma.jpg"></li>
-    <li id="bannerlist"><img id="imglist" title="Statistical tools often use to drive changes" src="jmpminitab.jpg"></li>
-    <li id="bannerlist"><img id="imglist" title="Framework for Testing, Data Engineering, Analysis and Data Science." src="ananconda.jpg"></li>
-    <li id="bannerlist"><img id="imglist" src="tableau.jpg"></li>
-    <li id="bannerlist"><img id="imglist" src="labview.jpg"></li>
-    <li id="bannerlist"><img id="imglist" src="dataautomation.jpg"></li>
-    <li id="bannerlist"><img id="imglist" src="sdlc.jpg"></li>
-    <li id="bannerlist"><img id="imglist" src="agilesprint.jpg"></li>
-    <li id="bannerlist"><img id="imglist" src="visualstudio.jpg"></li>
-     <li id="bannerlist"><img id="imglist" src="pycharm.jpg"></li>
+<body  background="_themes/axis/axibkgnd.gif" bgcolor="#FFFFFF" text="#000000" link="#339933" vlink="#996600" alink="#CC9900"><font face="trebuchet ms, Arial, Helvetica"></font>
+<div align="center">
+    <ul class="bannerlist">
+    <li class="bannerlist"><img class="imglist" src="LogoBanner.jpg"></li>
+    <li class="bannerlist"><img class="imglist" title="Data mining is a Process." src="crispdm.jpg"></li>
+    <li class="bannerlist"><img class="imglist" title="SQL,Data Integration and Business Intelligence Dashboard to drive changes." src="ssrs.jpg"></li>
+    <li class="bannerlist"><img class="imglist" title="Six Sigma--Drive Changes using Data, Lean --Drive Workflow/ Process Improvement via Standardization" src="sixsigma.jpg"></li>
+    <li class="bannerlist"><img class="imglist" title="Statistical tools often use to drive changes" src="jmpminitab.jpg"></li>
+    <li class="bannerlist"><img class="imglist" title="Framework for Testing, Data Engineering, Analysis and Data Science." src="ananconda.jpg"></li>
+    <li class="bannerlist"><img class="imglist" src="tableau.jpg"></li>
+    <li class="bannerlist"><img class="imglist" src="labview.jpg"></li>
+    <li class="bannerlist"><img class="imglist" src="dataautomation.jpg"></li>
+    <li class="bannerlist"><img class="imglist" src="sdlc.jpg"></li>
+    <li class="bannerlist"><img class="imglist" src="agilesprint.jpg"></li>
+    <li class="bannerlist"><img class="imglist" src="visualstudio.jpg"></li>
+     <li class="bannerlist"><img class="imglist" src="pycharm.jpg"></li>
     <ol>
-    <li id="bannerlist"><img id="imglist01" title="Reliability Engineering application from Design to Production" src="reliasoft.png"></li>
-    <li id="bannerlist"><img id="imglist01" title="Scrum + Sprint improvement Process via Agile" src="scrum.gif"></li>
-    <li id="bannerlist"><img id="imglist01" title="Continuos Improvement via Plan,Do,Check,Act" src="PDCA.gif"></li>
+        <li class="bannerlist"><img class="imglist01" title="Reliability Engineering application from Design to Production" src="reliasoft.png"></li>
+        <li class="bannerlist"><img class="imglist01" title="Scrum + Sprint improvement Process via Agile" src="scrum.gif"></li>
+        <li class="bannerlist"><img class="imglist01" title="Continuos Improvement via Plan,Do,Check,Act" src="PDCA.gif"></li>
     </ol>
- 
-</ul>
-
-
-<p align="center">
-
-<marquee behavior="alternate" bgcolor="#008000">Welcome Folks. Test, Data, Analysis, Quality Engineering !</marquee></p>
-
-<p align="left"><b>Applying common engineering principles of test, quality and data analysis to the following industry:</b></p>
-
-<details>
-  <summary>Companies--Click for more information</summary>
-Companies:
-<div id="divlogo" style="  height: 100%;display: flex;align-items: center;justify-content: center;">
-<ul>
-     <li id="bannerlist"><img id="imglistlogo" src="ibmricohlogo.jpg"></li>
-    <li id="bannerlist"><img id="imglistlogo" src="wdlogo.jpg"></li>
-    <li id="bannerlist"><img id="imglistlogo" src="seagatelogo.jpg"></li>
-    <li id="bannerlist"><img id="imglistlogo" src="applelogo.jpg"></li>
-    <li id="bannerlist"><img id="imglistlogo" src="spherologo.jpg"></li>
-    <li id="bannerlist"><img id="imglistlogo" src="realdlogo.jpg"></li>
-    <li id="bannerlist"><img id="imglistlogo" src="netapplogo.jpg"></li>
-    <li id="bannerlist"><img id="imglistlogo" src="nslogo.jpg"></li>
-    <li id="bannerlist"><img id="imglistlogo" src="sonylogo.jpg"></li>
-    <li id="bannerlist"><img id="imglistlogo" src="displaytechlogo.jpg"></li>
-    <li id="bannerlist"><img id="imglistlogo" src="beckmanlogo.jpg"></li>
 </ul>
 </div>
-</details>
 
+<div align="center">
+    <p style="font-weight:bold"><marquee behavior="alternate" bgcolor="#008000">Welcome Folks. Test, Data, Analysis, Quality, Reliability Engineering !</marquee></p>
+    <p align="left"><b>Applying common engineering principles of test, quality, reliability and data analysis to the <font style="text-decoration: underline;
+color:red">any</font> industry:</b></p>
+</div>
+
+<details>
+  <summary TITLE="Click for more information">Companies--Click for more information</summary>
+Companies:
+    <div class="divlogo" style="  height: 100%;display: flex;align-items: center;justify-content: center;">
+    <ul>
+         <li class="bannerlist"><img class="imglistlogo" src="ibmricohlogo.jpg"></li>
+        <li class="bannerlist"><img class="imglistlogo" src="wdlogo.jpg"></li>
+        <li class="bannerlist"><img class="imglistlogo" src="seagatelogo.jpg"></li>
+        <li class="bannerlist"><img class="imglistlogo" src="applelogo.jpg"></li>
+        <li class="bannerlist"><img class="imglistlogo" src="spherologo.jpg"></li>
+        <li class="bannerlist"><img class="imglistlogo" src="realdlogo.jpg"></li>
+        <li class="bannerlist"><img class="imglistlogo" src="netapplogo.jpg"></li>
+        <li class="bannerlist"><img class="imglistlogo" src="nslogo.jpg"></li>
+        <li class="bannerlist"><img class="imglistlogo" src="sonylogo.jpg"></li>
+        <li class="bannerlist"><img class="imglistlogo" src="displaytechlogo.jpg"></li>
+        <li class="bannerlist"><img class="imglistlogo" src="beckmanlogo.jpg"></li>
+    </ul>
+    </div>
+</details>
 
 <p align="left"><u><b>The Why:</b></u></p>
 <ol>
@@ -275,30 +203,47 @@ Companies:
   <img src="goldbar.jpg" alt="blood platelet" width="50" height="50">
 </ol>
 
-
-<p align="left"><u><b>The How (processes):</b></u><p align="left">
-<ol>
-<li><a href="https://www.datascience-pm.com/crisp-dm-2/">Data Mining</a></li>
-<li><a href="Lean_Mfg.htm">Lean Manufacturing.</a></li>
-<li><a href="https://www.scaledagileframework.com/lean-agile-mindset/">Lean-Agile Mindset</a></li>
-<li><a href="Six_Sigma.htm">Six Sigma.</a></li>
-<li><a href="Traditional_Industrial_Engineering.htm">Industrial Engineering.</a></li>
-</ol>
-
-
-</ol>
-  <p align="left"><u><b>The Where (Application of principles):</b></u><ol>
-  <li>Design</li>
-  <li>Process</li>
-  <li>Service</li>
-  <li>Test</li>
-</ol>
-
+<details>
+  <summary TITLE="Click for more information">The How:</summary>
+    Driving changes with Process
+<!--    <p align="left"><u><b>The How (processes):</b></u><p align="left">-->
+        <ol>
+        <li><a href="https://www.datascience-pm.com/crisp-dm-2/">Data Mining</a></li>
+        <li><a href="Lean_Mfg.htm">Lean Manufacturing.</a></li>
+        <li><a href="https://www.scaledagileframework.com/lean-agile-mindset/">Lean-Agile Mindset</a></li>
+        <li><a href="Six_Sigma.htm">Six Sigma.</a></li>
+        <li><a href="Traditional_Industrial_Engineering.htm">Industrial Engineering.</a></li>
+        </ol>
+</details>
 
 <details>
-<summary>The Quotes:</summary>
+  <summary TITLE="Click for more information">The Where:</summary>
+    Where can I use these principles:
+<!--     <p align="left"><u><b>The Where (Application of principles):</b></u>-->
+    <ol>
+      <li>Waterfall Cycle:Analysis,Design,Implementation,Testing, Maintenance</li>
+      <li>SDLC Cycle:Initiation, Planning, Development, Release, Retirement  </li>
+      <li>Agile Methodologies Underpinning Values:
+          <ol>
+              <li>Individuals and Interactions Over Processes and Tools</li>
+              <li>Working Software Over Comprehensive Documentation</li>
+              <li>Customer Collaboration Over Contract Negotiation</li>
+              <li>Responding to Change Over Following a Plan</li>
+          </ol>
+      </li>
+      <li>Testing Life Cycle:Requirement analysis,Test planning,Test case design,Test environment setup,Test execution,Test closure </li>
+      <li>Test Stages:Unit Tests, Integration Tests, System Tests, Acceptance Tests.</li>
+      <li>Data Mining:Business understanding,Data understanding,Data preparation,Modeling,Evaluation, Deployment</li>
+      <li>Six Sigma D.M.A.I.C Cycle: Define, Measure, Analyze, Improve, Control</li>
+      <li>Six Sigma D.F.S.S Cycle: Define, Measure, Analyze, Design and Verify</li>
+      <li>Lean development: value, value stream, flow, pull, and perfection.</li>
+    </ol>
+</details>
+
+<details>
+<summary TITLE="Click for more information">The Quotes:</summary>
 Quotes on Quality Engineering (Deming and others):
-<div id="divlogo" style="  height: 100%;display: flex;align-items: center;justify-content: center;">
+<div class="divlogo" style="  height: 100%;display: flex;align-items: center;justify-content: center;">
   <div class="section-break"> </div>
   <p align="left">
 <ul>
@@ -325,417 +270,135 @@ Quotes on Quality Engineering (Deming and others):
   <li> "Just because you've counted all the trees doesn't mean you've seen the forest." ~ Anonymous</li>
 </ul>
   </p>
+</div>
 </details>
 
 <details>
-<summary>The Jokes:</summary>
+<summary TITLE="Click for more information">The Jokes:</summary>
 Jokes about quality, processes and etc
-<div id="divlogo" style="  height: 100%;display: flex;align-items: center;justify-content: center;">
+<div class="divlogo" style="  height: 100%;display: flex;align-items: center;justify-content: center;">
   <div class="section-break"> </div>
   <p align="left">
 <ul>
-   <li><img id="imglistjokes" src="https://assets.amuniversal.com/20cb19006d6401301d80001dd8b71c47" title="Six Sigma"/img></li>
-   <li><img id="imglistjokes" src="https://assets.amuniversal.com/22bd00d06d6401301d80001dd8b71c47" title="Six Sigma"/img></li>
-   <li><img id="imglistjokes" src="https://assets.amuniversal.com/4b9def60e14e0137cc29005056a9545d" title="Software Quality"/img></li>
-   <li><img id="imglistjokes" src="https://assets.amuniversal.com/bfebb9c09fd8012f2fe600163e41dd5b" title="Software Quality"/img></li>
-   <li><img id="imglistjokes" src="https://assets.amuniversal.com/66747d706d5401301d7c001dd8b71c47" title="Statistics"/img></li>
-   <li><img id="imglistjokes" src="https://assets.amuniversal.com/ff26e0a06d5001301d7a001dd8b71c47" title="Agile Programming"/img></li>
-   <li><img id="imglistjokes" src="https://assets.amuniversal.com/e91ec9c016c20134707c005056a9545d" title="Agile Process"/img></li>
-   <li><img id="imglistjokes" src="https://assets.amuniversal.com/096f45406cc901301d50001dd8b71c47" title="Dashboard"/img></li>
-   <li><img id="imglistjokes" src="https://assets.amuniversal.com/3eae4ad0889d0132c1df005056a9545d" title="Reliability"/img></li>
-    <li><img id="imglistjokes" src="https://i.pinimg.com/originals/13/b7/cc/13b7ccb4eca4d3d73c31077985439484.jpg" title="Spaghetti Process Flow"/img></li>
-   <li><img id="imglistjokes" src="https://qph.fs.quoracdn.net/main-qimg-5385bb5ed76e71110b5226f937572044-mzj" title="Programming"/img></li>
-   <li><img id="imglistjokes" src="https://qph.fs.quoracdn.net/main-qimg-b4d9d74cb5dbd92cd81daabbf0a9bdad-mzj" title="UI Design"/img></li>
-  <li><img id="imglistjokes" src="https://cdn.mos.cms.futurecdn.net/eecedbe4c59db73f9a5164f1d671fd37.jpg" title="Design"/img></li>
+
+   <li><img class="imglistjokes" src="https://assets.amuniversal.com/20cb19006d6401301d80001dd8b71c47" title="Six Sigma"></img></li>
+   <li><img class="imglistjokes" src="https://assets.amuniversal.com/22bd00d06d6401301d80001dd8b71c47" title="Six Sigma"></img><</li>
+   <li><img class="imglistjokes" src="https://assets.amuniversal.com/4b9def60e14e0137cc29005056a9545d" title="Software Quality"></img><</li>
+   <li><img class="imglistjokes" src="https://assets.amuniversal.com/bfebb9c09fd8012f2fe600163e41dd5b" title="Software Quality"></img><</li>
+   <li><img class="imglistjokes" src="https://assets.amuniversal.com/66747d706d5401301d7c001dd8b71c47" title="Statistics"></img><</li>
+   <li><img class="imglistjokes" src="https://assets.amuniversal.com/ff26e0a06d5001301d7a001dd8b71c47" title="Agile Programming"></img><</li>
+   <li><img class="imglistjokes" src="https://assets.amuniversal.com/e91ec9c016c20134707c005056a9545d" title="Agile Process"></img><</li>
+   <li><img class="imglistjokes" src="https://assets.amuniversal.com/096f45406cc901301d50001dd8b71c47" title="Dashboard"></img><</li>
+   <li><img class="imglistjokes" src="https://assets.amuniversal.com/3eae4ad0889d0132c1df005056a9545d" title="Reliability"></img><</li>
+    <li><img class="imglistjokes" src="https://i.pinimg.com/originals/13/b7/cc/13b7ccb4eca4d3d73c31077985439484.jpg" title="Spaghetti Process Flow"></img><</li>
+   <li><img class="imglistjokes" src="https://qph.fs.quoracdn.net/main-qimg-5385bb5ed76e71110b5226f937572044-mzj" title="Programming"></img><</li>
+   <li><img class="imglistjokes" src="https://qph.fs.quoracdn.net/main-qimg-b4d9d74cb5dbd92cd81daabbf0a9bdad-mzj" title="UI Design"></img><</li>
+  <li><img class="imglistjokes" src="https://cdn.mos.cms.futurecdn.net/eecedbe4c59db73f9a5164f1d671fd37.jpg" title="Design"></img><</li>
 
 </ul>
   </p>
+</div>
 </details>
 
+<p align="left"><u><b>Support link: Email Author</b></u></p>
+<a href="mailto:looneytoon@gmail.com?subject=Quality_Engineering_Web">
+<img border="0" src="emailsymbol.gif" width="79" height="53"></a>&nbsp;&nbsp;&nbsp;
 
-
-<p align="left"><u><b>Support link:</b></u></p>
-
-<p align="left">
-
-<font face="Bodoni Highlight ICG">
-
-<!--webbot bot="Navigation" S-Orientation="horizontal" S-Rendering="graphics" B-FirstInsert="TRUE" S-Type="children" startspan --><!--webbot bot="Navigation" endspan i-checksum="0" --> </font>
-
-<p align="left">
-
-<a href="mailto:looneytoon@gmail.com?subject=Test Automation Industrial Website">
-
-<img border="0" src="emailsymbol.gif" width="79" height="53"></a>&nbsp;&nbsp;&nbsp; 
-
-Email Richard</p>
-
-<p align="left">&nbsp;</p>
-
-<p align="left"><!-- Google SafeSearch  -->
-
-<center>
-
-<FORM method=GET action="http://www.google.com/search">
-
-<!--mstheme--></font><TABLE bgcolor="#FFFFFF"><tr><td><!--mstheme--><font face="trebuchet ms, Arial, Helvetica">
-
-<A HREF="http://www.google.com/search?safe=vss">
-
-<IMG SRC="http://www.google.com/logos/Google_Safe.gif"
-
- border="0" ALT="Google" width="115" height="45" align="absmiddle"></A>
-
+<div align="center">
+<form method=GET action="http://www.google.com/search" target="_blank">
+<A HREF="http://www.google.com/search?safe=vss"><IMG SRC="http://www.google.com/logos/Google_Safe.gif" border="0" ALT="Google" width="115" height="45" align="center"></A>
 <INPUT TYPE=text name=q size=25 maxlength=255 value="">
-
 <INPUT type=hidden name=safe value=vss>
+<INPUT type=submit name=sa value="Google Search"><font face="trebuchet ms, Arial, Helvetica"></font>
+</form>
+</div>
 
-<INPUT type=submit name=sa value="Google Search"> <!--mstheme--></font></td></tr></TABLE><!--mstheme--><font face="trebuchet ms, Arial, Helvetica">
+<p align="right">
+<canvas id="canvas" width="100" height="100"style="background-color:#333;" align="right"></canvas>
+</p>
+<script>
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var radius = canvas.height / 2;
+ctx.translate(radius, radius);
+radius = radius * 0.90
+setInterval(drawClock, 1000);
 
-</FORM>
-
-</center>
-
-<!-- Google SafeSearch --></p>
-
-<p align="left">&nbsp;</p>
-
-<!--mstheme--></font><table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="100%" bordercolordark="#999999" bordercolorlight="#CCCC99">
-
-  <tr>
-
-    <td width="100%"><!--mstheme--><font face="trebuchet ms, Arial, Helvetica"><!--webbot bot="HTMLMarkup" startspan --><script language="JavaScript">
-
-
-
-//Analog clock script- By Kurt (kurt.grigg@virgin.net)
-
-//Script featured on Dynamic Drive
-
-//Visit http://www.dynamicdrive.com for this script and more
-
-
-
-fCol='444444'; //face colour.
-
-sCol='FF0000'; //seconds colour.
-
-mCol='444444'; //minutes colour.
-
-hCol='444444'; //hours colour.
-
-
-
-Ybase=30; //Clock height.
-
-Xbase=30; //Clock width.
-
-
-
-
-
-H='...';
-
-H=H.split('');
-
-M='....';
-
-M=M.split('');
-
-S='.....';
-
-S=S.split('');
-
-NS4=(document.layers);
-
-NS6=(document.getElementById&&!document.all);
-
-IE4=(document.all);
-
-Ypos=0;
-
-Xpos=0;
-
-dots=12;
-
-Split=360/dots;
-
-if (NS6){
-
-for (i=1; i < dots+1; i++){
-
-document.write('<div id="n6Digits'+i+'" style="position:absolute;top:0px;left:0px;width:30px;height:30px;font-family:Arial;font-size:10px;color:#'+fCol+';text-align:center;padding-top:10px">'+i+'</div>');
-
+function drawClock() {
+  drawFace(ctx, radius);
+  drawNumbers(ctx, radius);
+  drawTime(ctx, radius);
 }
 
-for (i=0; i < M.length; i++){
-
-document.write('<div id="Ny'+i+'" style="position:absolute;top:0px;left:0px;width:2px;height:2px;font-size:2px;background:#'+mCol+'"></div>');
-
+function drawFace(ctx, radius) {
+  var grad;
+  ctx.beginPath();
+  ctx.arc(0, 0, radius, 0, 2*Math.PI);
+  ctx.fillStyle = 'white';
+  ctx.fill();
+  grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+  grad.addColorStop(0, '#333');
+  grad.addColorStop(0.5, 'white');
+  grad.addColorStop(1, '#333');
+  ctx.strokeStyle = grad;
+  ctx.lineWidth = radius*0.1;
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+  ctx.fillStyle = '#333';
+  ctx.fill();
 }
 
-for (i=0; i < H.length; i++){
-
-document.write('<div id="Nz'+i+'" style="position:absolute;top:0px;left:0px;width:2px;height:2px;font-size:2px;background:#'+hCol+'"></div>');
-
+function drawNumbers(ctx, radius) {
+  var ang;
+  var num;
+  ctx.font = radius*0.15 + "px arial";
+  ctx.textBaseline="middle";
+  ctx.textAlign="center";
+  for(num = 1; num < 13; num++){
+    ang = num * Math.PI / 6;
+    ctx.rotate(ang);
+    ctx.translate(0, -radius*0.85);
+    ctx.rotate(-ang);
+    ctx.fillText(num.toString(), 0, 0);
+    ctx.rotate(ang);
+    ctx.translate(0, radius*0.85);
+    ctx.rotate(-ang);
+  }
 }
 
-for (i=0; i < S.length; i++){
-
-document.write('<div id="Nx'+i+'" style="position:absolute;top:0px;left:0px;width:2px;height:2px;font-size:2px;background:#'+sCol+'"></div>');
-
+function drawTime(ctx, radius){
+    var now = new Date();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    //hour
+    hour=hour%12;
+    hour=(hour*Math.PI/6)+
+    (minute*Math.PI/(6*60))+
+    (second*Math.PI/(360*60));
+    drawHand(ctx, hour, radius*0.5, radius*0.07);
+    //minute
+    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+    drawHand(ctx, minute, radius*0.8, radius*0.07);
+    // second
+    second=(second*Math.PI/30);
+    drawHand(ctx, second, radius*0.9, radius*0.02);
 }
 
+function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.moveTo(0,0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
 }
+</script>
 
-if (NS4){
 
-dgts='1 2 3 4 5 6 7 8 9 10 11 12';
 
-dgts=dgts.split(' ')
-
-for (i=0; i < dots; i++){
-
-document.write('<layer name=nsDigits'+i+' top=0 left=0 height=30 width=30><center><font face=Arial size=1 color='+fCol+'>'+dgts[i]+'</font></center></layer>');
-
-}
-
-for (i=0; i < M.length; i++){
-
-document.write('<layer name=ny'+i+' top=0 left=0 bgcolor='+mCol+' clip="0,0,2,2"></layer>');
-
-}
-
-for (i=0; i < H.length; i++){
-
-document.write('<layer name=nz'+i+' top=0 left=0 bgcolor='+hCol+' clip="0,0,2,2"></layer>');
-
-}
-
-for (i=0; i < S.length; i++){
-
-document.write('<layer name=nx'+i+' top=0 left=0 bgcolor='+sCol+' clip="0,0,2,2"></layer>');
-
-}
-
-}
-
-if (IE4){
-
-document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
-
-for (i=1; i < dots+1; i++){
-
-document.write('<div id="ieDigits" style="position:absolute;top:0px;left:0px;width:30px;height:30px;font-family:Arial;font-size:10px;color:'+fCol+';text-align:center;padding-top:10px">'+i+'</div>');
-
-}
-
-document.write('</div></div>')
-
-document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
-
-for (i=0; i < M.length; i++){
-
-document.write('<div id=y style="position:absolute;width:2px;height:2px;font-size:2px;background:'+mCol+'"></div>');
-
-}
-
-document.write('</div></div>')
-
-document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
-
-for (i=0; i < H.length; i++){
-
-document.write('<div id=z style="position:absolute;width:2px;height:2px;font-size:2px;background:'+hCol+'"></div>');
-
-}
-
-document.write('</div></div>')
-
-document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
-
-for (i=0; i < S.length; i++){
-
-document.write('<div id=x style="position:absolute;width:2px;height:2px;font-size:2px;background:'+sCol+'"></div>');
-
-}
-
-document.write('</div></div>')
-
-}
-
-
-
-
-
-
-
-function clock(){
-
-time = new Date ();
-
-secs = time.getSeconds();
-
-sec = -1.57 + Math.PI * secs/30;
-
-mins = time.getMinutes();
-
-min = -1.57 + Math.PI * mins/30;
-
-hr = time.getHours();
-
-hrs = -1.57 + Math.PI * hr/6 + Math.PI*parseInt(time.getMinutes())/360;
-
-
-
-if (NS6){
-
-Ypos=window.pageYOffset+window.innerHeight-Ybase-25;
-
-Xpos=window.pageXOffset+window.innerWidth-Xbase-30;
-
-for (i=1; i < dots+1; i++){
-
- document.getElementById("n6Digits"+i).style.top=Ypos-15+Ybase*Math.sin(-1.56 +i *Split*Math.PI/180)
-
- document.getElementById("n6Digits"+i).style.left=Xpos-15+Xbase*Math.cos(-1.56 +i*Split*Math.PI/180)
-
- }
-
-for (i=0; i < S.length; i++){
-
- document.getElementById("Nx"+i).style.top=Ypos+i*Ybase/4.1*Math.sin(sec);
-
- document.getElementById("Nx"+i).style.left=Xpos+i*Xbase/4.1*Math.cos(sec);
-
- }
-
-for (i=0; i < M.length; i++){
-
- document.getElementById("Ny"+i).style.top=Ypos+i*Ybase/4.1*Math.sin(min);
-
- document.getElementById("Ny"+i).style.left=Xpos+i*Xbase/4.1*Math.cos(min);
-
- }
-
-for (i=0; i < H.length; i++){
-
- document.getElementById("Nz"+i).style.top=Ypos+i*Ybase/4.1*Math.sin(hrs);
-
- document.getElementById("Nz"+i).style.left=Xpos+i*Xbase/4.1*Math.cos(hrs);
-
- }
-
-}
-
-if (NS4){
-
-Ypos=window.pageYOffset+window.innerHeight-Ybase-20;
-
-Xpos=window.pageXOffset+window.innerWidth-Xbase-30;
-
-for (i=0; i < dots; ++i){
-
- document.layers["nsDigits"+i].top=Ypos-5+Ybase*Math.sin(-1.045 +i*Split*Math.PI/180)
-
- document.layers["nsDigits"+i].left=Xpos-15+Xbase*Math.cos(-1.045 +i*Split*Math.PI/180)
-
- }
-
-for (i=0; i < S.length; i++){
-
- document.layers["nx"+i].top=Ypos+i*Ybase/4.1*Math.sin(sec);
-
- document.layers["nx"+i].left=Xpos+i*Xbase/4.1*Math.cos(sec);
-
- }
-
-for (i=0; i < M.length; i++){
-
- document.layers["ny"+i].top=Ypos+i*Ybase/4.1*Math.sin(min);
-
- document.layers["ny"+i].left=Xpos+i*Xbase/4.1*Math.cos(min);
-
- }
-
-for (i=0; i < H.length; i++){
-
- document.layers["nz"+i].top=Ypos+i*Ybase/4.1*Math.sin(hrs);
-
- document.layers["nz"+i].left=Xpos+i*Xbase/4.1*Math.cos(hrs);
-
- }
-
-}
-
-
-
-if (IE4){
-
-Ypos=document.body.scrollTop+window.document.body.clientHeight-Ybase-20;
-
-Xpos=document.body.scrollLeft+window.document.body.clientWidth-Xbase-20;
-
-for (i=0; i < dots; ++i){
-
- ieDigits[i].style.pixelTop=Ypos-15+Ybase*Math.sin(-1.045 +i *Split*Math.PI/180)
-
- ieDigits[i].style.pixelLeft=Xpos-15+Xbase*Math.cos(-1.045 +i *Split*Math.PI/180)
-
- }
-
-for (i=0; i < S.length; i++){
-
- x[i].style.pixelTop =Ypos+i*Ybase/4.1*Math.sin(sec);
-
- x[i].style.pixelLeft=Xpos+i*Xbase/4.1*Math.cos(sec);
-
- }
-
-for (i=0; i < M.length; i++){
-
- y[i].style.pixelTop =Ypos+i*Ybase/4.1*Math.sin(min);
-
- y[i].style.pixelLeft=Xpos+i*Xbase/4.1*Math.cos(min);
-
- }
-
-for (i=0; i < H.length; i++){
-
- z[i].style.pixelTop =Ypos+i*Ybase/4.1*Math.sin(hrs);
-
- z[i].style.pixelLeft=Xpos+i*Xbase/4.1*Math.cos(hrs);
-
- }
-
-}
-
-setTimeout('clock()',100);
-
-}
-
-clock();
-
-//-->
-
-</script><!--webbot bot="HTMLMarkup" endspan --><!--mstheme--></font></td>
-
-  </tr>
-
-</table><!--mstheme--><font face="trebuchet ms, Arial, Helvetica"><!--mstheme--></font></body></html>
-
-		<!-- main BODY end -->
-
-  	  <!--mstheme--></font></td></tr>
-
-</table><!--mstheme--><font face="trebuchet ms, Arial, Helvetica">
-
-<p>&nbsp;
-
-<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ar.atwola.com/file/adsEnd.js"></SCRIPT>
-
-
-
-<!--mstheme--></font></BODY>
-
-</HTML>
+</body>
+</html>
