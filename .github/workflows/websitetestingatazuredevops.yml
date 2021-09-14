@@ -1,13 +1,20 @@
 name: CI
 
 # Run this workflow every time a commit is pushed to main or a pull request is opened against main
+#on:
+#  push:
+#    branches:
+#      - main
+#  pull_request:
+#    branches: 
+#      - main
+
+# Only trigger, when the build workflow succeeded
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches: 
-      - main
+  workflow_run:
+    workflows: ["Azure Static Web Apps CI/CD"]
+    types:
+      - completed
 
 jobs:
     build:
