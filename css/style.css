@@ -1,0 +1,91 @@
+ <style>
+    body {
+      background-color: #E6E6FA;
+    }
+
+    details {
+        border: 1px solid #d4d4d4;
+        padding: .75em .75em 0;
+        margin-top: 10px;
+        box-shadow:0 0 20px #d4d4d4;
+    }
+
+    summary {
+        font-weight: bold;
+        margin: -.75em -.75em 0;
+        padding: .75em;
+        background-color: #5f75a4;
+        color: #fff;
+    }
+
+    details[open] {
+        padding: .75em;
+        border-bottom: 1px solid #d4d4d4;
+    }
+
+    details[open] summary {
+        border-bottom: 1px solid #d4d4d4;
+        margin-bottom: 10px;
+    }
+
+
+    .bannerlist {
+    white-space: nowrap;
+      list-style: none;
+      display: inline;
+    }
+
+    .imglist0{
+      text-align: center;
+      width: 200px;
+
+    }
+
+    .imglist{
+      text-align: center;
+      width: 100px;
+
+    }
+
+    .imglist01{
+       text-align: center;
+       width: 350px;
+    }
+
+        .imglist02{
+       text-align: center;
+       width: 400px;
+    }
+
+    .imglistlogo{
+        max-width:120px;
+        max-height:120px;
+        width:auto;
+        height:auto;
+        transform:rotate(-45deg);
+        padding:20px;
+
+    }
+
+    .imglistjokes{
+      text-align: center;
+      width: 55%;
+    }
+
+    .glow {
+  font-size: 80px;
+  color: #0066ff;
+  text-align: center;
+  animation: glow 1.0s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+
+    </style>
